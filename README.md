@@ -1,2 +1,1 @@
 # boligvekst
-# boligvekst
