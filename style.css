@@ -1,1 +1,169 @@
-#map { height: 180px; }
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background: #f4f6f8;
+	color: #17242e;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.page {
+	width: min(1180px, calc(100% - 40px));
+	margin: 0 auto;
+	padding: 42px 0 36px;
+}
+
+.page-header {
+	max-width: 760px;
+	margin-bottom: 24px;
+}
+
+.eyebrow {
+	margin: 0 0 8px;
+	color: #147d70;
+	font-size: 0.78rem;
+	font-weight: 700;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+}
+
+h1 {
+	margin: 0;
+	font-size: clamp(1.8rem, 4vw, 2.65rem);
+	letter-spacing: -0.04em;
+}
+
+.intro {
+	margin: 10px 0 0;
+	color: #586873;
+	font-size: 1.05rem;
+	line-height: 1.55;
+}
+
+.map-card {
+	overflow: hidden;
+	border: 1px solid #e1e7eb;
+	border-radius: 16px;
+	background: #fff;
+	box-shadow: 0 12px 36px rgb(25 45 60 / 8%);
+}
+
+.map-controls {
+	display: flex;
+	align-items: center;
+	min-height: 58px;
+	padding: 14px 24px;
+	border-bottom: 1px solid #e8edf0;
+}
+
+#map-status {
+	margin: 0 0 0 auto;
+	color: #667680;
+	font-size: 0.85rem;
+}
+
+#map {
+	width: 100%;
+	height: min(68vh, 680px);
+	min-height: 430px;
+	background: #fff;
+}
+
+.map-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+	min-height: 74px;
+	padding: 14px 20px;
+}
+
+.legend {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 8px 12px;
+	color: #53636d;
+	font-size: 0.8rem;
+}
+
+.legend-title {
+	width: 100%;
+	color: #263740;
+	font-weight: 700;
+}
+
+.legend-item {
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.legend-swatch {
+	width: 13px;
+	height: 13px;
+	border: 1px solid rgb(0 0 0 / 10%);
+	border-radius: 3px;
+}
+
+.source {
+	margin: 0;
+	color: #77858d;
+	font-size: 0.78rem;
+	text-align: right;
+}
+
+.leaflet-popup-content {
+	line-height: 1.6;
+}
+
+.district-label {
+	padding: 2px 5px;
+	border: 0;
+	border-radius: 4px;
+	background: rgb(255 255 255 / 82%);
+	box-shadow: 0 1px 4px rgb(35 20 50 / 20%);
+	color: #32184a;
+	font-size: 11px;
+	font-weight: 700;
+	white-space: nowrap;
+}
+
+.popup-title {
+	margin-bottom: 3px;
+	font-size: 1rem;
+	font-weight: 700;
+}
+
+@media (max-width: 640px) {
+	.page {
+		width: min(100% - 24px, 1180px);
+		padding-top: 26px;
+	}
+
+	.map-controls {
+		align-items: flex-start;
+		flex-direction: column;
+		gap: 8px;
+	}
+
+	#map-status {
+		margin-left: 0;
+	}
+
+	#map {
+		height: 58vh;
+		min-height: 390px;
+	}
+
+	.map-footer {
+		align-items: flex-start;
+		flex-direction: column;
+	}
+
+	.source {
+		text-align: left;
+	}
+}

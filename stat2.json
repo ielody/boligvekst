@@ -1,0 +1,312 @@
+{
+    "version": "2.0",
+    "class": "dataset",
+    "label": "Gjennomsnittlig kvadratmeterpris, antall kvadratmeter for omsatte boliger 2018 -> (GO) etter år, geografi, boligtype og statistikkvariabel",
+    "source": "Boligmappa AS (www.boligmappa.no)",
+    "updated": "2026-05-04T06:00:00Z",
+    "note": [
+        "Denne tabellen, BOL018, har (f.o.m. april 2026) erstattet BOL012, som er overført til 'avsluttet tidsserie'. Dette skyldes at bransjestandard for arealmåling er endret fra p-rom til BRA/BRA-i. Hele tidsserien følger nå BRA/BRA-i som standard for arealmåling. I motsetning til gammel standard (p-rom) inkluderer den nye standarden (BRA/BRA-i) bod i leilighet som en del av det innvendige arealet. Dette gjør at for enkelte boliger vil arealet etter ny standard være litt høyere enn ved gammel standard, som igjen fører til at pris per kvadratmeter for enkelte boliger kan være litt lavere med ny arealdefinisjon.",
+        "BESKRIVELSE AV STATISTIKKEN\r\n- Beskrivelse av tabellen: Tabellen viser gjennomsnittlig kvadratmeterpris, gjennomsnittlig antall kvadratmeter og antall salg med tilstrekkelig opplysninger om areal og kjøpesum, blant omsatte boliger i Oslo. De nevnte måltallene kan fordeles på boligtype og geografi.\r\n- Forklaringer av begreper og variabler:\r\nGjennomsnittlig kvadratmeterpris: Pris er kjøpesummen oppgitt i kjøpekontrakten. For borettslagsboliger er både innskudd og andel av fellesgjeld inkludert i prisen. Arealbegrepet som benyttes i beregningen er BRA/BRA-i som angir innvendig bruksareal i boligen. Dette arealbegrepet ble innført som norsk standard f.o.m. 2024.\r\nBoligtype: Blokkleilighet (leiligheter i boligblokk med to etasjer eller flere), Småhus, annet (eneboliger, rekkehus, tomannsboliger og annet)\r\n- Standard klassifikasjoner: Oslos geografiske inndelinger (grunnkretsområder, delbydeler (2017) og bydeler).\r\n- Geografisk nivå/målepunkter: Grunnkretsområde er laveste geografiske nivå. Mer informasjon om de geografiske inndelingene bydel, delbydel og grunnkrets finnes her: https://www.oslo.kommune.no/politikk-og-administrasjon/statistikk/geografiske-inndelinger/",
+        "PRODUKSJON OG KVALITET\r\n- Populasjon/Omfang: Populasjonen er omsatte boliger i Oslo gjennom kalenderåret med tilstrekkelig opplysninger om areal og kjøpesum.\r\nMed 'omsatte boliger' menes her: Alle salg via FINN.no og grunnboken som står oppført som et fritt salg (i motsetning til arv e.l.), hvor kjøper og selger ikke er samme person, hvor salget er fullstendig (100% av eiendommen er solgt), og hvor det er kun en enhet som er solgt (ikke en boligblokk e.l.).\r\n- Kvalitetssikring: Oslo kommune mottar ferdig kvalitetssikret data av Boligmappa AS.\r\n- Sammenlignbarhet over tid: Tallene i tabellen er sammenlignbare over tid.\r\n- Feilkilder og usikkerhet: Fra 1.1. 2024 ble det innført en regelendring for arealmåling av boliger. P-rom ble erstattet av BRA/BRA-i. Det finnes opplysninger om BRA også i dataene fra før 2024, men tallgrunnlaget er noe tynnere enn for 2024 og senere.\r\nFlere av de beregnete prisene i tabellen vil være basert på et lavt antall omsatte boliger, avhengig av hvor mange boliger som er solgt i det definerte området av en viss boligtype det bestemte året. Når prisberegningen er basert på få salg, øker sjansen for store variasjoner fra et år til et annet. Dersom du ønsker å få et mer robust inntrykk av prisutviklingen på boliger over tid, se tabell BOL016, prisindeks for boliger.",
+        "DOKUMENTASJON OG RELEVANTE LENKER\r\n- Les om <A HREF=https://eiendomnorge.no/nyheter/viktig-informasjon-om-arealmaling-article2588-919.html TARGET=_blank>endret standard for arealmåling.</A>\r\n- Denne tabellen publiseres også i <A HREF=https://bydelsfakta.oslo.kommune.no/bydel/gamleoslo/boligpriser TARGET=_blank>Bydelsfakta.</A>\r\n"
+    ],
+    "role": {
+        "time": [
+            "år"
+        ],
+        "metric": [
+            "ContentsCode"
+        ]
+    },
+    "id": [
+        "ContentsCode",
+        "år",
+        "geografi",
+        "boligtype",
+        "statistikkvariabel"
+    ],
+    "size": [
+        1,
+        8,
+        15,
+        1,
+        1
+    ],
+    "dimension": {
+        "ContentsCode": {
+            "label": "EliminatedContents",
+            "category": {
+                "index": {
+                    "EliminatedValue": 0
+                },
+                "label": {
+                    "EliminatedValue": "Gjennomsnittlig kvadratmeterpris, antall kvadratmeter for omsatte boliger 2018 -> (GO)"
+                },
+                "unit": {
+                    "EliminatedValue": {
+                        "base": "Gjennomsnittlig kvadratmeterpris, gjennomsnittlig antall kvadratmeter, antall omsatte boliger (med tilstrekkelig opplysninger om areal og kjøpesum)",
+                        "decimals": 13
+                    }
+                }
+            },
+            "extension": {
+                "elimination": true
+            }
+        },
+        "år": {
+            "label": "år",
+            "category": {
+                "index": {
+                    "0": 0,
+                    "1": 1,
+                    "2": 2,
+                    "3": 3,
+                    "4": 4,
+                    "5": 5,
+                    "6": 6,
+                    "7": 7
+                },
+                "label": {
+                    "0": "2018",
+                    "1": "2019",
+                    "2": "2020",
+                    "3": "2021",
+                    "4": "2022",
+                    "5": "2023",
+                    "6": "2024",
+                    "7": "2025"
+                }
+            },
+            "extension": {
+                "elimination": false,
+                "show": "value"
+            }
+        },
+        "geografi": {
+            "label": "geografi",
+            "category": {
+                "index": {
+                    "30101": 0,
+                    "30102": 1,
+                    "30103": 2,
+                    "30104": 3,
+                    "30105": 4,
+                    "30106": 5,
+                    "30107": 6,
+                    "30108": 7,
+                    "30109": 8,
+                    "30110": 9,
+                    "30111": 10,
+                    "30112": 11,
+                    "30113": 12,
+                    "30114": 13,
+                    "30115": 14
+                },
+                "label": {
+                    "30101": "01 Gamle Oslo",
+                    "30102": "02 Grünerløkka",
+                    "30103": "03 Sagene",
+                    "30104": "04 St.Hanshaugen",
+                    "30105": "05 Frogner",
+                    "30106": "06 Ullern",
+                    "30107": "07 Vestre Aker",
+                    "30108": "08 Nordre Aker",
+                    "30109": "09 Bjerke",
+                    "30110": "10 Grorud",
+                    "30111": "11 Stovner",
+                    "30112": "12 Alna",
+                    "30113": "13 Østensjø",
+                    "30114": "14 Nordstrand",
+                    "30115": "15 Søndre Nordstrand"
+                }
+            },
+            "extension": {
+                "elimination": false,
+                "show": "value"
+            }
+        },
+        "boligtype": {
+            "label": "boligtype",
+            "category": {
+                "index": {
+                    "0": 0
+                },
+                "label": {
+                    "0": "Boliger i alt"
+                }
+            },
+            "extension": {
+                "elimination": true,
+                "eliminationValueCode": "0",
+                "show": "value"
+            }
+        },
+        "statistikkvariabel": {
+            "label": "statistikkvariabel",
+            "category": {
+                "index": {
+                    "2": 0
+                },
+                "label": {
+                    "2": "Gjennomsnitt kvadratmeterpris"
+                }
+            },
+            "extension": {
+                "elimination": false,
+                "show": "value"
+            }
+        }
+    },
+    "extension": {
+        "noteMandatory": {
+            "0": true
+        },
+        "px": {
+            "decimals": 0,
+            "official-statistics": false,
+            "aggregallowed": true,
+            "language": "no",
+            "contents": "Gjennomsnittlig kvadratmeterpris, antall kvadratmeter for omsatte boliger 2018 -> (GO)",
+            "description": "BOL018: Gjennomsnittlig kvadratmeterpris og antall kvadratmeter for omsatte boliger (GO), 2018-2025",
+            "descriptiondefault": true,
+            "heading": [
+                "statistikkvariabel"
+            ],
+            "stub": [
+                "år",
+                "geografi",
+                "boligtype"
+            ],
+            "matrix": "ok-bol018",
+            "subject-code": "BOL",
+            "subject-area": "Bolig, boforhold og byggevirksomhet"
+        },
+        "contact": [
+            {
+                "raw": "Byrådsavdeling for finans (oslostatistikken@byr.oslo.kommune.no)"
+            }
+        ]
+    },
+    "value": [
+        73063,
+        73556,
+        79245,
+        81087,
+        87915,
+        70755,
+        66404,
+        74733,
+        58288,
+        45287,
+        39888,
+        46442,
+        54617,
+        61310,
+        39646,
+        80168,
+        78565,
+        82745,
+        84587,
+        90955,
+        76536,
+        69948,
+        77815,
+        60321,
+        45871,
+        42094,
+        49475,
+        56743,
+        60985,
+        40874,
+        84169,
+        82663,
+        87716,
+        90360,
+        96053,
+        78628,
+        73980,
+        79309,
+        61991,
+        48845,
+        41954,
+        51508,
+        59557,
+        63652,
+        41694,
+        91310,
+        92185,
+        95691,
+        99042,
+        104693,
+        86919,
+        77603,
+        89206,
+        70517,
+        53576,
+        47961,
+        56927,
+        66140,
+        71906,
+        47775,
+        93421,
+        96616,
+        101776,
+        104284,
+        113616,
+        89738,
+        83348,
+        93579,
+        74721,
+        57921,
+        51301,
+        59884,
+        68445,
+        75995,
+        50353,
+        97636,
+        96602,
+        102764,
+        105463,
+        112354,
+        90618,
+        84692,
+        95879,
+        77302,
+        57862,
+        49534,
+        58726,
+        70450,
+        76469,
+        51245,
+        99033,
+        102878,
+        107432,
+        110862,
+        117443,
+        91702,
+        84929,
+        96918,
+        80006,
+        60605,
+        51241,
+        63598,
+        72326,
+        79363,
+        49677,
+        108383,
+        106256,
+        114748,
+        118303,
+        124088,
+        98466,
+        89196,
+        103362,
+        84779,
+        65821,
+        55269,
+        69499,
+        77285,
+        81047,
+        52064
+    ]
+}
